@@ -1,0 +1,38 @@
+﻿<Properties StartupConfiguration="{305E7E8A-BB92-4686-95AF-D851AE2C79EB}|Default">
+  <MonoDevelop.Ide.ItemProperties.test PreferredExecutionTarget="/Applications/Safari.app" />
+  <MonoDevelop.Ide.Workbench ActiveDocument="test/Pages/Counter.razor">
+    <Files>
+      <File FileName="test/Shared/MainLayout.razor" Line="18" Column="1" />
+      <File FileName="test/Shared/NavMenu.razor" Line="23" Column="23" />
+      <File FileName="test/Pages/Counter.razor" Line="22" Column="1" />
+      <File FileName="test/Pages/FetchData.razor" Line="1" Column="1" />
+      <File FileName="test/Pages/Index.razor" Line="1" Column="10" />
+    </Files>
+    <Pads>
+      <Pad Id="ProjectPad">
+        <State name="__root__">
+          <Node name="test" expanded="True">
+            <Node name="test" expanded="True">
+              <Node name="Dependencies" expanded="True" />
+              <Node name="Pages" expanded="True">
+                <Node name="Counter.razor" selected="True" />
+              </Node>
+              <Node name="Properties" expanded="True" />
+              <Node name="Shared" expanded="True" />
+              <Node name="wwwroot" expanded="True" />
+            </Node>
+          </Node>
+        </State>
+      </Pad>
+      <Pad Id="MonoDevelop.Debugger.WatchPad">
+        <State />
+      </Pad>
+    </Pads>
+  </MonoDevelop.Ide.Workbench>
+  <MonoDevelop.Ide.DebuggingService.PinnedWatches />
+  <MonoDevelop.Ide.Workspace ActiveConfiguration="Debug" />
+  <MonoDevelop.Ide.DebuggingService.Breakpoints>
+    <BreakpointStore />
+  </MonoDevelop.Ide.DebuggingService.Breakpoints>
+  <MultiItemStartupConfigurations />
+</Properties>

@@ -1,0 +1,68 @@
+﻿@page "/counter"
+@using System.Timers
+
+<h1>Counter</h1>
+
+<p>Current count: @currentCount</p>
+
+<button class="btn btn-primary" @onclick="IncrementCount">Click me</button>
+
+<button class="btn btn-primary" @onclick="StartTime">@name</button>
+
+<p>現在時刻: @now</p>
+<p>現在時刻: @now2</p>
+
+@code {
+    private int currentCount = 0;
+
+    private void IncrementCount()
+    {
+        currentCount = currentCount + 2;
+    }
+
+    private void StartTime()
+    {
+        if (name == "StopTime")
+        {
+            timer2.Stop();
+            name = "StartTime";
+        }
+        else
+        {
+            timer2.Start();
+            name = "StopTime";
+        }
+    }
+
+    private Timer timer;
+    private Timer timer2;
+    private DateTime now;
+    private DateTime now2;
+    private string name = "StartTime";
+
+    protected override void OnInitialized()
+    {
+        timer = new Timer(1000);
+        timer.Elapsed += (sender, e) =>
+        {
+            now = DateTime.Now;
+            StateHasChanged();
+        };
+        timer.Start();
+
+        timer2 = new Timer(2000);
+        timer2.Elapsed += (sender, e) =>
+        {
+            now2 = DateTime.Now;
+            StateHasChanged();
+        };
+    }
+
+    public void Dispose()
+    {
+        timer.Stop();
+        timer.Dispose();
+        timer2.Stop();
+        timer2.Dispose();
+    }
+}
